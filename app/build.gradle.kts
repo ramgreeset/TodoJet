@@ -72,6 +72,15 @@ dependencies {
     implementation("com.google.devtools.ksp:symbol-processing-api:1.9.10-1.0.13")
 
     val room_version = "2.5.2"
+    val koin_android_compose_version = "3.4.4"
+    val koin_android_version = "3.4.0"
+    
+    //Koin
+    implementation ("io.insert-koin:koin-android:$koin_android_version")
+    implementation ("io.insert-koin:koin-androidx-compose:$koin_android_compose_version")
+
+
+    //Room
 
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
